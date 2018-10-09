@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">GPhyExam</string>
+    <string name="app_name" translatable="false">GPhyExam</string>
 
-    <string-array name="traduction">
-        <item>"Welcome"</item>
-        <item>"Medication"</item>
-    </string-array>
+    <string name="welcome_message">Welcome</string>
+    <string name="medication_name">Medication</string>
+
 </resources>
