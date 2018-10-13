@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/medicament4" />
+        android:background="@drawable/medicament4" />
 
     <ImageView
         android:id="@+id/iv_medic2"
@@ -23,7 +23,7 @@
         app:layout_constraintBottom_toTopOf="@+id/iv_medic1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/medicament2" />
+        android:background="@drawable/medicament2" />
 
     <ImageView
         android:id="@+id/iv_medic6"
@@ -32,33 +32,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_medic5"
-        app:srcCompat="@drawable/medicament6" />
+        android:background="@drawable/medicament6" />
 
     <ImageView
         android:id="@+id/iv_medic1"
         style="@style/medic_icons"
         app:layout_constraintBottom_toTopOf="@id/iv_medic4"
         app:layout_constraintEnd_toStartOf="@+id/iv_medic4"
-        app:srcCompat="@drawable/medicament1" />
+        android:background="@drawable/medicament1" />
 
     <ImageView
         android:id="@+id/iv_medic3"
         style="@style/medic_icons"
         app:layout_constraintStart_toEndOf="@+id/iv_medic4"
         app:layout_constraintBottom_toTopOf="@id/iv_medic4"
-        app:srcCompat="@drawable/medicament3"/>
+        android:background="@drawable/medicament3"/>
 
     <ImageView
         android:id="@+id/iv_medic5"
         style="@style/medic_icons"
         app:layout_constraintEnd_toStartOf="@+id/iv_medic4"
         app:layout_constraintTop_toBottomOf="@id/iv_medic4"
-        app:srcCompat="@drawable/medicament5" />
+        android:background="@drawable/medicament5" />
 
     <ImageView
         android:id="@+id/iv_medic7"
         style="@style/medic_icons"
         app:layout_constraintTop_toBottomOf="@id/iv_medic4"
         app:layout_constraintStart_toEndOf="@+id/iv_medic4"
-        app:srcCompat="@drawable/medicament7" />
+        android:background="@drawable/medicament7" />
 </android.support.constraint.ConstraintLayout>

@@ -4,4 +4,16 @@
     <string name="welcome_message">Welcome</string>
     <string name="medication_name">Medication</string>
 
+    <string-array name="posologies">
+        <item translatable="false">Voie cutanée</item>
+        <item translatable="false">Voie orale</item>
+        <item translatable="false">Voie intraarticulaire</item>
+        <item translatable="false">Voie inhalée</item>
+        <item translatable="false">Voie intraveineuse</item>
+        <item translatable="false">Voie transdermique</item>
+        <item translatable="false">Voie ophtalmique</item>
+        <item translatable="false">Voie intramusculaire</item>
+    </string-array>
+
+
 </resources>
