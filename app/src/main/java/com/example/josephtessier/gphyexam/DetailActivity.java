@@ -3,6 +3,8 @@ package com.example.josephtessier.gphyexam;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,9 +40,16 @@ public class DetailActivity extends AppCompatActivity {
         iconId = getIntent().getIntExtra("ICON", 0);
         ImageView imageView = findViewById(R.id.iv_detailPanel);
         imageView.setImageResource(iconId);
+
+
+
+
     }
 
     public void launchNotification(View v) {
+
+        // TODO : les icons pour les notifications sont trop petites et pas centrées
+
         Notification notif = new Notification.Builder(this)
                 .setSmallIcon(iconId)
                 .setContentTitle(name)
@@ -52,5 +61,7 @@ public class DetailActivity extends AppCompatActivity {
         manager.notify(0, notif);
 
     }
+
+    // TODO : manage higher android versions ( -> notification need a channel specified)
 
 }
