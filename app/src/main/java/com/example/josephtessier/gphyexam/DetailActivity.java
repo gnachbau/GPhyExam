@@ -1,6 +1,7 @@
 package com.example.josephtessier.gphyexam;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +15,6 @@ public class DetailActivity extends AppCompatActivity {
     String name;
     String poso;
 
-    NotificationManager notificationManager;
 
 
     @Override
@@ -40,17 +40,17 @@ public class DetailActivity extends AppCompatActivity {
         imageView.setImageResource(iconId);
     }
 
-    /*
-    public void onClick(View v) {
-        Notification.Builder builder = new Notification.Builder(this);
-        builder.setSmallIcon(iconId);
-        builder.setContentTitle(name);
-        builder.setContentText(poso);
+    public void launchNotification(View v) {
+        Notification notif = new Notification.Builder(this)
+                .setSmallIcon(iconId)
+                .setContentTitle(name)
+                .setContentText(poso)
+                .build();
 
-        notificationManager = (NotificationManager) getSystemService(this.NOTIFICATION_SERVICE);
+        NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
-        notificationManager.notify(0, builder.build());
+        manager.notify(0, notif);
+
     }
-    */
 
 }
